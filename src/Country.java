@@ -1,2 +1,7 @@
-package PACKAGE_NAME;public enum Country {
+public enum Country {
+    KYRGYZSTAN,
+    CHINA,
+    RUSSIAN,
+    FRANCE,
+    QAZAQSTAN
 }
