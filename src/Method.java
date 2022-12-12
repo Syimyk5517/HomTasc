@@ -4,8 +4,9 @@ import java.util.Stack;
 public interface Method {
 
 
-    String createPassport(List<Pasport> passports);
-    String installWhatsApp(List<Whatsapp> users);
-    String addContact(List<Whatsapp> users, Whatsapp whatsApp);
-    void getMessage (List<Contact> contacts, Whatsapp myUser);
+    String createPassport(List<Pasport> passports,Pasport pasport);
+    String installWhatsApp(List<Whatsapp> whatsapps,List<Pasport>pasports);
+    String addContact(List<Whatsapp> whatsappList,Whatsapp whatsapp);
+    String getMessage (List<Whatsapp> whatsapps,Whatsapp whatsapp);
+
 }

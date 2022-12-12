@@ -1,13 +1,18 @@
+import java.util.ArrayList;
 import java.util.List;
 
-public class Contact {
+public class Contact extends Whatsapp
+
+ {
     private String phoneNumber;
     private String fullname;
-    private List<String> meseg;
+    private List<String> meseg = new ArrayList<>();
+
 
     public Contact(String phoneNumber, String fullname) {
         this.phoneNumber = phoneNumber;
         this.fullname = fullname;
+
     }
 
     public String getPhoneNumber() {
@@ -26,6 +31,7 @@ public class Contact {
         this.fullname = fullname;
     }
 
+
     public List<String> getMeseg() {
         return meseg;
     }
@@ -36,10 +42,8 @@ public class Contact {
 
     @Override
     public String toString() {
-        return "Contact{" +
-                "phoneNumber='" + phoneNumber + '\'' +
-                ", fullname='" + fullname + '\'' +
-                ", meseg=" + meseg +
-                '}';
+        return "Contact:" +
+                "\nphoneNumber:" + phoneNumber +
+                "\nfullname:" + fullname ;
     }
 }

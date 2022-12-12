@@ -7,7 +7,7 @@ public class Person {
     private Gender gender;
     private Country placeOfBirth;
 
-    public Person(String name, String lastName, LocalDate dateOfBirth, Gender gender,  Country placeOfBirth) {
+    public Person(String name, String lastName, LocalDate dateOfBirth, Gender gender, Country placeOfBirth) {
         this.name = name;
         this.lastName = lastName;
         this.dateOfBirth = dateOfBirth;
@@ -58,12 +58,10 @@ public class Person {
 
     @Override
     public String toString() {
-        return
-                "Name='" + name + '\'' +
-                ", lastName='" + lastName + '\'' +
-                ", dateOfBirth=" + dateOfBirth +
-                ", gender=" + gender +
-                ", placeOfBirth=" + placeOfBirth +
-                '}';
+        return  "\nName:" + name +
+                "\nLastName:" + lastName +
+                "\nDate Of birth:" + dateOfBirth +
+                "\nGender:" + gender +
+                "\nPlace Of birth:" + placeOfBirth ;
     }
 }
